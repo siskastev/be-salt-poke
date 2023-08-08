@@ -30,6 +30,38 @@
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 
+## Technical Test Scopes
+* CRUD Products
+
+* Integration with API [pokeapi.co](https://pokeapi.co/) to get all data pokemon, type and pokemon species
+
+* Implementation Redis and Rate Limit Nest JS
+
+## API Documentation
+The API documentation for the app is provided in the `api-docs.json` file.
+This file allows you to quickly test the API endpoints when the Docker container is running also you can try in `localhost:3000/api-docs`.
+You can use various API testing tools or utilities to interact with the API and view the responses for each endpoint.
+
+## Setup
+1. Clone the repository:
+```bash
+git clone https://github.com/siskastev/be-salt-poke.git
+```
+2. Navigate to the project directory:
+```bash
+cd be-salt-poke
+```
+3. Rename or copy .env.example to .env
+
+## Running the app with Docker
+
+```bash
+$ docker-compose up
+
+# test
+$ docker exec -it be-test-salt npm test
+```
+
 ## Running the app
 
 ```bash
