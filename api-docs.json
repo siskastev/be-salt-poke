@@ -1,0 +1,474 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/api/products": {
+      "post": {
+        "operationId": "ProductController_create",
+        "summary": "Create a new product",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successfully create data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuccessResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BadRequestResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "Products"
+        ]
+      },
+      "get": {
+        "operationId": "ProductController_get",
+        "summary": "Get all products",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successfully fetch data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuccessResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "Products"
+        ]
+      }
+    },
+    "/api/products/{id}": {
+      "get": {
+        "operationId": "ProductController_getByID",
+        "summary": "Get a product by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully fetch data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuccessResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "Products"
+        ]
+      },
+      "put": {
+        "operationId": "ProductController_update",
+        "summary": "Update a product by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successfully update data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuccessResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "Products"
+        ]
+      },
+      "delete": {
+        "operationId": "ProductController_delete",
+        "summary": "Delete a product by ID",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully delete data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MessageResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "Products"
+        ]
+      }
+    },
+    "/api/pokemon": {
+      "get": {
+        "operationId": "PokemonController_get",
+        "summary": "Get all Pokemon or specific Pokemon by name or ID",
+        "parameters": [
+          {
+            "name": "type",
+            "required": false,
+            "in": "query",
+            "description": "The type of data to fetch (pokemon, species, or type)",
+            "schema": {
+              "enum": [
+                "pokemon",
+                "pokemon-species",
+                "type"
+              ],
+              "type": "string"
+            }
+          },
+          {
+            "name": "q",
+            "required": false,
+            "in": "query",
+            "description": "Keyword to search for specific Pokemon",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "required": false,
+            "in": "query",
+            "description": "Limit for pagination default 20",
+            "example": 20,
+            "schema": {
+              "type": "number"
+            }
+          },
+          {
+            "name": "offset",
+            "required": false,
+            "in": "query",
+            "description": "Offset for pagination default 0",
+            "example": 20,
+            "schema": {
+              "type": "number"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully fetch data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuccessResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "Pokemon"
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "API Products and Pokemon",
+    "description": "Nest JS for SALT Technical Test",
+    "version": "1.0",
+    "contact": {}
+  },
+  "tags": [
+    {
+      "name": "Products",
+      "description": ""
+    },
+    {
+      "name": "Pokemon",
+      "description": ""
+    }
+  ],
+  "servers": [],
+  "components": {
+    "schemas": {
+      "ProductRequestDto": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "Product Name",
+            "description": "The name of the product"
+          },
+          "qty": {
+            "type": "number",
+            "example": 10,
+            "description": "The quantity of the product"
+          },
+          "price": {
+            "type": "number",
+            "example": 10000,
+            "description": "The price of the product"
+          },
+          "production_date": {
+            "format": "date-time",
+            "type": "string",
+            "example": "2023-08-06",
+            "description": "The production date of the product format YYYY-MM-DD"
+          },
+          "description": {
+            "type": "string",
+            "example": "Product Description",
+            "description": "The description of the product"
+          }
+        },
+        "required": [
+          "name",
+          "qty",
+          "price",
+          "production_date",
+          "description"
+        ]
+      },
+      "SuccessResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "description": "Success message",
+            "example": "Successfully fetch data"
+          },
+          "data": {
+            "type": "object",
+            "description": "result of data",
+            "example": {}
+          }
+        },
+        "required": [
+          "message",
+          "data"
+        ]
+      },
+      "BadRequestResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "object",
+            "example": {
+              "name": [
+                "Name should not be empty",
+                "Name must be a string"
+              ],
+              "qty": [
+                "Qty must not be greater than 100",
+                "Qty must not be less than 1",
+                "Qty must be a number conforming to the specified constraints",
+                "Qty should not be empty"
+              ],
+              "price": [
+                "Price must be a number conforming to the specified constraints",
+                "Price should not be empty"
+              ],
+              "production_date": [
+                "Production_date must be a valid ISO 8601 date string",
+                "Production_date should not be empty"
+              ],
+              "description": [
+                "Description should not be empty",
+                "Description must be a string"
+              ]
+            },
+            "description": "Validation error message"
+          },
+          "error": {
+            "type": "string",
+            "example": "Bad Request",
+            "description": "Error message"
+          },
+          "statusCode": {
+            "type": "number",
+            "example": 400,
+            "description": "HTTP status code"
+          }
+        },
+        "required": [
+          "message",
+          "error",
+          "statusCode"
+        ]
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "Product Not Found",
+            "description": "Error Exceptions"
+          }
+        },
+        "required": [
+          "message"
+        ]
+      },
+      "MessageResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "example": "Successfully delete data products",
+            "description": "Message Response"
+          }
+        },
+        "required": [
+          "message"
+        ]
+      }
+    }
+  }
+}

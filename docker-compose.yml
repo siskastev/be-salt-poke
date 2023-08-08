@@ -1,0 +1,49 @@
+version: '3'
+services:
+  app:
+    container_name: be-test-salt
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env
+    depends_on:
+      - mysqldb
+      - redis
+    networks:
+      - salt
+
+  mysqldb:
+    image: mysql:8.0
+    ports: 
+      - 3306:3306
+    environment: 
+      - MYSQL_ROOT_HOST=${DB_HOST} 
+      - MYSQL_USER=${DB_USERNAME}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - database_mysql:/var/lib/mysql
+    networks:
+      - salt
+
+  redis:
+    image: redis:latest
+    restart: always
+    ports:
+      - 6379:6379
+    volumes:
+      - redis:/data
+    networks:
+      - salt
+
+volumes:
+  redis:
+  database_mysql:
+
+networks:
+  salt:
+    driver: bridge

@@ -1,0 +1,154 @@
+undefined [INFO]: Product created: Product 1 {"payload":{"name":"Product 1","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"functionName":"create","route":"/products","timestamp":"2023-08-05T13:26:15.872Z"}
+undefined [INFO]: Product created: Product 1 {"payload":{"name":"Product 1","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"functionName":"create","route":"/products","timestamp":"2023-08-05T13:30:38.418Z"}
+undefined [INFO]: Product created: Product 1 {"payload":{"name":"Product 1","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"functionName":"create","route":"/api/products","timestamp":"2023-08-05T13:32:32.580Z"}
+undefined [INFO]: Product created: Product 1 {"payload":{"name":"Product 1","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"functionName":"create","route":"/api/products","timestamp":"2023-08-05T13:32:40.982Z"}
+undefined [INFO]: Product created: Product 1 {"payload":{"name":"Product 1","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"functionName":"create","route":"/api/products","timestamp":"2023-08-05 20:43:14"}
+undefined [INFO]: Product created: Product 1 {"payload":{"name":"Product 1","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"functionName":"create","route":"/api/products","timestamp":"2023-08-05T13:44:17.084Z"}
+[undefined] [INFO]: Product created: Product 1 {"payload":{"name":"Product 1","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"functionName":"create","route":"/api/products","timestamp":"2023-08-05T13:44:56.720Z"}
+[2023-08-05 13:53:27 [UTC]] [INFO]: Product created: Product 1 {"payload":{"name":"Product 1","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"functionName":"create","route":"/api/products","timestamp":"2023-08-05T13:53:27.343Z"}
+[2023-08-05 14:07:29 [UTC]] [INFO]: Product created: Product 1 {"payload":{"name":"Product 1","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"functionName":"create","route":"/api/products","timestamp":"2023-08-05T14:07:29.925Z"}
+[2023-08-05 14:08:06 [UTC]] [ERROR]: Could not find any entity of type "Product" matching: {
+    "id": "1"
+} {"functionName":"getByID","route":"/api/products/1","timestamp":"2023-08-05T14:08:06.204Z"}
+[2023-08-05 14:08:27 [UTC]] [INFO]: Product created: Product 1 {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T14:08:27.105Z"}
+[2023-08-05 14:08:33 [UTC]] [ERROR]: Could not find any entity of type "Product" matching: {
+    "id": "ea13732c-a054-4658-9485-6371616f5789"
+} {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5789","timestamp":"2023-08-05T14:08:33.678Z"}
+[2023-08-05 14:13:33 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5789","timestamp":"2023-08-05T14:13:33.688Z"}
+[2023-08-05 14:13:42 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5788","timestamp":"2023-08-05T14:13:42.017Z"}
+[2023-08-05 14:13:43 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5788","timestamp":"2023-08-05T14:13:43.609Z"}
+[2023-08-05 14:13:53 [UTC]] [INFO]: Product created: Product 1 {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T14:13:53.755Z"}
+[2023-08-05 14:14:04 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/1","timestamp":"2023-08-05T14:14:04.956Z"}
+[2023-08-05 14:14:10 [UTC]] [INFO]: Product created: Product 1 {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T14:14:10.081Z"}
+[2023-08-05 14:52:53 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T14:52:53.005Z"}
+[2023-08-05 14:53:26 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T14:53:26.307Z"}
+[2023-08-05 14:53:31 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T14:53:31.370Z"}
+[2023-08-05 14:54:57 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T14:54:57.980Z"}
+[2023-08-05 14:58:40 [UTC]] [INFO]: Product created: Product 1 {"payload":{"name":"Product 1","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"functionName":"create","route":"/api/products","timestamp":"2023-08-05T14:58:40.368Z"}
+[2023-08-05 14:58:51 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T14:58:51.902Z"}
+[2023-08-05 15:13:32 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T15:13:32.357Z"}
+[2023-08-05 15:14:06 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T15:14:06.446Z"}
+[2023-08-05 15:14:27 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T15:14:27.988Z"}
+[2023-08-05 15:14:36 [UTC]] [ERROR]: Product not found {"functionName":"update","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T15:14:36.028Z"}
+[2023-08-05 15:14:55 [UTC]] [ERROR]: Cannot read properties of undefined (reading 'name') {"functionName":"update","route":"/api/products/1","timestamp":"2023-08-05T15:14:55.141Z"}
+[2023-08-05 15:16:42 [UTC]] [ERROR]: Cannot read properties of undefined (reading 'name') {"functionName":"update","route":"/api/products/1","timestamp":"2023-08-05T15:16:42.934Z"}
+[2023-08-05 15:17:03 [UTC]] [ERROR]: Cannot read properties of undefined (reading 'name') {"functionName":"update","route":"/api/products/1","timestamp":"2023-08-05T15:17:03.082Z"}
+[2023-08-05 15:17:40 [UTC]] [ERROR]: Cannot read properties of undefined (reading 'name') {"functionName":"update","route":"/api/products/1","timestamp":"2023-08-05T15:17:40.576Z"}
+[2023-08-05 15:19:42 [UTC]] [ERROR]: Cannot read properties of undefined (reading 'name') {"functionName":"update","route":"/api/products/1","timestamp":"2023-08-05T15:19:42.894Z"}
+[2023-08-05 15:21:01 [UTC]] [ERROR]: Cannot read properties of undefined (reading 'name') {"functionName":"update","route":"/api/products/1","timestamp":"2023-08-05T15:21:01.656Z"}
+[2023-08-05 15:23:33 [UTC]] [ERROR]: Cannot read properties of undefined (reading 'name') {"functionName":"update","route":"/api/products/1","timestamp":"2023-08-05T15:23:33.431Z"}
+[2023-08-05 15:25:55 [UTC]] [ERROR]: Cannot read properties of undefined (reading 'name') {"functionName":"update","route":"/api/products/1","timestamp":"2023-08-05T15:25:55.576Z"}
+[2023-08-05 15:39:38 [UTC]] [INFO]: Product created: Product 1 {"payload":{"name":" Product 1 ","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"functionName":"create","route":"/api/products","timestamp":"2023-08-05T15:39:38.240Z"}
+[2023-08-05 15:39:46 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T15:39:46.832Z"}
+[2023-08-05 15:40:02 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T15:40:02.151Z"}
+[2023-08-05 15:40:21 [UTC]] [ERROR]: Product not found {"functionName":"update","route":"/api/products/1","timestamp":"2023-08-05T15:40:21.671Z"}
+[2023-08-05 15:40:27 [UTC]] [ERROR]: Product not found {"functionName":"update","route":"/api/products/1","timestamp":"2023-08-05T15:40:27.000Z"}
+[2023-08-05 15:40:28 [UTC]] [ERROR]: Product not found {"functionName":"update","route":"/api/products/1","timestamp":"2023-08-05T15:40:28.633Z"}
+[2023-08-05 15:40:39 [UTC]] [ERROR]: Cannot read properties of undefined (reading 'name') {"functionName":"update","route":"/api/products/e711ec95-685b-4e80-985b-95b3301f7f5c","timestamp":"2023-08-05T15:40:39.988Z"}
+[2023-08-05 15:44:12 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T15:44:12.643Z"}
+[2023-08-05 15:44:30 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T15:44:30.319Z"}
+[2023-08-05 15:45:39 [UTC]] [ERROR]: Product not found {"functionName":"update","route":"/api/products/e711ec95-685b-4e80-985b-95b3301f7f5","timestamp":"2023-08-05T15:45:39.579Z"}
+[2023-08-05 15:45:44 [UTC]] [ERROR]: Product not found {"functionName":"update","route":"/api/products/e711ec95-685b-4e80-985b-95b3301f7fc","timestamp":"2023-08-05T15:45:44.761Z"}
+[2023-08-05 15:45:59 [UTC]] [INFO]: Product update ID: e711ec95-685b-4e80-985b-95b3301f7f5c {"functionName":"update","route":"/api/products/e711ec95-685b-4e80-985b-95b3301f7f5c","timestamp":"2023-08-05T15:45:59.185Z"}
+[2023-08-05 15:46:33 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T15:46:33.933Z"}
+[2023-08-05 15:59:37 [UTC]] [ERROR]: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T15:59:37.957Z"}
+[2023-08-05 16:00:32 [UTC]] [ERROR]: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:00:32.961Z"}
+[2023-08-05 16:01:57 [UTC]] [ERROR]: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. {"functionName":"create","payload":{"name":" Product 1 ","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"route":"/api/products","timestamp":"2023-08-05T16:01:57.682Z"}
+[2023-08-05 16:04:17 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:04:17.454Z"}
+[2023-08-05 16:04:26 [UTC]] [ERROR]: MISCONF Redis is configured to save RDB snapshots, but it's currently unable to persist to disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error. {"functionName":"update","route":"/api/products/e711ec95-685b-4e80-985b-95b3301f7f5c","timestamp":"2023-08-05T16:04:26.507Z"}
+[2023-08-05 16:08:44 [UTC]] [INFO]: Product created: Product 1 {"payload":{"name":" Product 1 ","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"functionName":"create","route":"/api/products","timestamp":"2023-08-05T16:08:44.981Z"}
+[2023-08-05 16:08:59 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:08:59.721Z"}
+[2023-08-05 16:09:21 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:09:21.938Z"}
+[2023-08-05 16:09:51 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:09:51.661Z"}
+[2023-08-05 16:10:13 [UTC]] [INFO]: Product get by ID: 76e3b799-376d-4897-a655-7ca1576db81a {"functionName":"getByID","route":"/api/products/76e3b799-376d-4897-a655-7ca1576db81a","timestamp":"2023-08-05T16:10:13.494Z"}
+[2023-08-05 16:10:25 [UTC]] [INFO]: Product delete ID: 76e3b799-376d-4897-a655-7ca1576db81a {"functionName":"delete","route":"/api/products/76e3b799-376d-4897-a655-7ca1576db81a","timestamp":"2023-08-05T16:10:25.039Z"}
+[2023-08-05 16:10:38 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:10:38.294Z"}
+[2023-08-05 16:14:46 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:14:46.087Z"}
+[2023-08-05 16:14:47 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:14:47.488Z"}
+[2023-08-05 16:14:48 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:14:48.357Z"}
+[2023-08-05 16:14:49 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:14:49.291Z"}
+[2023-08-05 16:14:50 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:14:50.877Z"}
+[2023-08-05 16:14:52 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:14:52.002Z"}
+[2023-08-05 16:14:52 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:14:52.874Z"}
+[2023-08-05 16:14:53 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:14:53.739Z"}
+[2023-08-05 16:14:54 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:14:54.516Z"}
+[2023-08-05 16:14:55 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:14:55.290Z"}
+[2023-08-05 16:17:04 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:17:04.993Z"}
+[2023-08-05 16:17:07 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:17:07.082Z"}
+[2023-08-05 16:17:08 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:17:08.135Z"}
+[2023-08-05 16:17:09 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:17:09.171Z"}
+[2023-08-05 16:17:10 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:17:10.142Z"}
+[2023-08-05 16:17:11 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:17:11.108Z"}
+[2023-08-05 16:17:12 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:17:12.047Z"}
+[2023-08-05 16:17:13 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:17:13.052Z"}
+[2023-08-05 16:17:13 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:17:13.935Z"}
+[2023-08-05 16:17:14 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T16:17:14.973Z"}
+[2023-08-05 16:17:22 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:17:22.150Z"}
+[2023-08-05 16:17:23 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:17:23.733Z"}
+[2023-08-05 16:21:10 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:21:10.959Z"}
+[2023-08-05 16:21:12 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:21:12.007Z"}
+[2023-08-05 16:21:12 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:21:12.992Z"}
+[2023-08-05 16:21:13 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:21:13.884Z"}
+[2023-08-05 16:21:14 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:21:14.970Z"}
+[2023-08-05 16:21:15 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:21:15.988Z"}
+[2023-08-05 16:21:16 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:21:16.916Z"}
+[2023-08-05 16:21:17 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:21:17.920Z"}
+[2023-08-05 16:21:18 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:21:18.843Z"}
+[2023-08-05 16:21:19 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T16:21:19.766Z"}
+[2023-08-05 16:21:26 [UTC]] [INFO]: Product created: Product 1 {"payload":{"name":" Product 1 ","qty":10,"price":200000,"production_date":"2023-02-01","description":"Hello World"},"functionName":"create","route":"/api/products","timestamp":"2023-08-05T16:21:26.904Z"}
+[2023-08-05 17:04:25 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:04:25.126Z"}
+[2023-08-05 17:05:46 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:05:46.780Z"}
+[2023-08-05 17:05:49 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:05:49.465Z"}
+[2023-08-05 17:05:52 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:05:52.101Z"}
+[2023-08-05 17:05:53 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:05:53.130Z"}
+[2023-08-05 17:05:54 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:05:54.173Z"}
+[2023-08-05 17:05:55 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:05:55.017Z"}
+[2023-08-05 17:05:55 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:05:55.812Z"}
+[2023-08-05 17:05:56 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:05:56.612Z"}
+[2023-08-05 17:05:57 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:05:57.429Z"}
+[2023-08-05 17:05:58 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:05:58.201Z"}
+[2023-08-05 17:06:04 [UTC]] [INFO]: Product update ID: e711ec95-685b-4e80-985b-95b3301f7f5c {"functionName":"update","route":"/api/products/e711ec95-685b-4e80-985b-95b3301f7f5c","timestamp":"2023-08-05T17:06:04.266Z"}
+[2023-08-05 17:06:11 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T17:06:11.261Z"}
+[2023-08-05 17:14:27 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T17:14:27.089Z"}
+[2023-08-05 17:14:28 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T17:14:28.952Z"}
+[2023-08-05 17:14:29 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T17:14:29.874Z"}
+[2023-08-05 17:14:31 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T17:14:31.692Z"}
+[2023-08-05 17:14:32 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T17:14:32.584Z"}
+[2023-08-05 17:14:39 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:14:39.552Z"}
+[2023-08-05 17:14:40 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:14:40.965Z"}
+[2023-08-05 17:14:41 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:14:41.882Z"}
+[2023-08-05 17:19:46 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:19:46.345Z"}
+[2023-08-05 17:19:49 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:19:49.144Z"}
+[2023-08-05 17:19:50 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:19:50.341Z"}
+[2023-08-05 17:19:51 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:19:51.824Z"}
+[2023-08-05 17:19:52 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:19:52.896Z"}
+[2023-08-05 17:19:53 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:19:53.867Z"}
+[2023-08-05 17:19:54 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:19:54.858Z"}
+[2023-08-05 17:19:55 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:19:55.805Z"}
+[2023-08-05 17:19:56 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:19:56.778Z"}
+[2023-08-05 17:19:57 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:19:57.849Z"}
+[2023-08-05 17:20:06 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T17:20:06.944Z"}
+[2023-08-05 17:20:08 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T17:20:08.956Z"}
+[2023-08-05 17:20:10 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T17:20:10.035Z"}
+[2023-08-05 17:20:10 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T17:20:10.963Z"}
+[2023-08-05 17:34:21 [UTC]] [ERROR]: Product not found {"functionName":"getByID","route":"/api/products/ea13732c-a054-4658-9485-6371616f5783","timestamp":"2023-08-05T17:34:21.898Z"}
+[2023-08-05 17:34:25 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:34:25.470Z"}
+[2023-08-05 17:34:27 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:34:27.433Z"}
+[2023-08-05 17:34:28 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:34:28.641Z"}
+[2023-08-05 17:34:48 [UTC]] [INFO]: Product update ID: e711ec95-685b-4e80-985b-95b3301f7f5c {"functionName":"update","route":"/api/products/e711ec95-685b-4e80-985b-95b3301f7f5c","timestamp":"2023-08-05T17:34:48.442Z"}
+[2023-08-05 17:34:59 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-05T17:34:59.501Z"}
+[2023-08-06 08:16:37 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-06T08:16:37.177Z"}
+[2023-08-06 08:24:52 [UTC]] [ERROR]: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle {"functionName":"getByID","route":"/api/pokemon?type=pokemon-species&offset=0&limit=20&q=aegislash","timestamp":"2023-08-06T08:24:52.049Z"}
+[2023-08-06 08:25:08 [UTC]] [ERROR]: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle {"functionName":"getByID","route":"/api/pokemon?type=pokemon-species&offset=0&limit=20&q=aegislash","timestamp":"2023-08-06T08:25:08.955Z"}
+[2023-08-06 08:25:10 [UTC]] [ERROR]: Converting circular structure to JSON
+    --> starting at object with constructor 'ClientRequest'
+    |     property 'socket' -> object with constructor 'TLSSocket'
+    --- property '_httpMessage' closes the circle {"functionName":"getByID","route":"/api/pokemon?type=pokemon-species&offset=0&limit=20&q=aegislash","timestamp":"2023-08-06T08:25:10.504Z"}
+[2023-08-06 15:54:50 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-06T15:54:50.024Z"}
+[2023-08-06 15:54:54 [UTC]] [INFO]: Get All Product {"functionName":"get","route":"/api/products","timestamp":"2023-08-06T15:54:54.022Z"}
