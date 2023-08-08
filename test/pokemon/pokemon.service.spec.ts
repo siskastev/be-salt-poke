@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { PokemonService } from '../src/pokemon/services/pokemon.service';
-import { RedisService } from '../src/redis/redis.service';
+import { PokemonService } from 'src/pokemon/services/pokemon.service';
+import { RedisService } from 'src/redis/redis.service';
 import axios from 'axios';
 
 describe('PokemonService', () => {

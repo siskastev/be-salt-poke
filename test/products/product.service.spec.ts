@@ -1,11 +1,11 @@
 import { Test } from '@nestjs/testing';
-import { ProductService } from '../src/products/services/product.service';
-import { ProductRepository } from '../src/products/repositories/product.repository';
-import { RedisService } from '../src/redis/redis.service';
+import { ProductService } from 'src/products/services/product.service';
+import { ProductRepository } from 'src/products/repositories/product.repository';
+import { RedisService } from 'src/redis/redis.service';
 import { NotFoundException } from '@nestjs/common';
-import { ProductRequestDto } from '../src/products/dto/request-product.dto';
-import { ProductResponseDto } from '../src/products/dto/response-product.dto';
-import { Product } from '../src/domain/products/entities/product.entity';
+import { ProductRequestDto } from 'src/products/dto/request-product.dto';
+import { ProductResponseDto } from 'src/products/dto/response-product.dto';
+import { Product } from 'src/domain/products/entities/product.entity';
 
 describe('ProductService', () => {
     let productService: ProductService;
